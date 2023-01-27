@@ -1,0 +1,75 @@
+$primeira-cor: #222222; 
+$segunda-cor: #b98b59;
+$terceira-cor: #fff;
+$quarta-cor: #d4ad83;
+$quinta-cor:#000000; 
+
+$texto-cor-primeira: #222222;
+$texto-cor-segunda: #666666;
+$texto-cor-terceira: #fff;
+$texto-cor-quarta: #b98b59;
+$texto-cor-quinta: #cdcdcd;
+
+
+img {
+  display: block;
+  max-width:100%
+}
+
+@mixin openBurguer{
+  @keyframes openBurguer{
+    from{
+        height: 0vh;
+    }
+    top{
+      height: 50vh;
+    }
+  }
+}
+
+$fontBase: 16;
+@function sizeElement($px, $base: $fontBase) {
+  @return ($px / $base) * 1rem;
+}
+
+@function lineheight($px, $base: 1.4){
+  @return ($px * $base) + px;
+}
+
+@mixin imgBg($img){
+  background: url("../files/imagens/#{$img}");
+}
+
+@mixin flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin baseFont {
+  font-size: $fontBase;
+}
+
+$desktop: 1000px;
+$tablet: 760px;
+$celular: 480px;
+
+@mixin responsivo($tela) {
+
+  @if $tela == desktop {
+    // 1100 pra cima
+    @media only screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $tela == tablet {
+    //Entre 760 a 999
+    @media only screen and (min-width: $tablet) and (max-width: #{$desktop - 1}) {
+      @content;
+    }
+  } @else if $tela == celular {
+    //Entre 0 a 759
+    @media only screen and (max-width: #{$tablet - 1}) {
+      @content;
+    }
+  }
+}
