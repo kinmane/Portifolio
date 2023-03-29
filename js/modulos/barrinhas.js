@@ -12,6 +12,7 @@ export default function initBarrinhas() {
     { nome: "C#", valor: 65 },
     { nome: "node Js", valor: 20 },
     { nome: "Java", valor: 35 },
+    { nome: "Bash", valor: 40 },
   ];
 
   const barrinhas = document.querySelectorAll(".js [data-js-grid-habilidade]");
