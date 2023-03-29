@@ -2,17 +2,16 @@ export default function initBarrinhas() {
   const tecValor = [
     { nome: "git e github", valor: 80 },
     { nome: "html e css:", valor: 90 },
-    { nome: "sass", valor: 50 },
     { nome: "javascript", valor: 75 },
-    { nome: "typescript", valor: 45 },
+    { nome: "typescript", valor: 50 },
     { nome: "bootstrap", valor: 40 },
     { nome: "react", valor: 60 },
     { nome: "next", valor: 70 },
-    { nome: "angular", valor: 10 },
     { nome: "Banco de Dados", valor: 50 },
-    { nome: "python", valor: 50 },
-    { nome: "C#", valor: 40 },
+    { nome: "python", valor: 45 },
+    { nome: "C#", valor: 65 },
     { nome: "node Js", valor: 20 },
+    { nome: "Java", valor: 35 },
   ];
 
   const barrinhas = document.querySelectorAll(".js [data-js-grid-habilidade]");
