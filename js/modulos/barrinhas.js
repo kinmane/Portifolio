@@ -9,9 +9,7 @@ export default function initBarrinhas() {
     { nome: "next", valor: 70 },
     { nome: "Banco de Dados", valor: 50 },
     { nome: "python", valor: 45 },
-    { nome: "C#", valor: 65 },
     { nome: "node Js", valor: 20 },
-    { nome: "Java", valor: 35 },
     { nome: "Bash", valor: 40 },
   ];
 
